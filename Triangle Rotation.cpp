@@ -15,4 +15,5 @@ cout << "\nEnter B: ";
    cin >> t.x1 >> t.y1;
 cout << "\nEnter C: ";
    cin >> t.x2 >> t.y2;
+cout << "\nMatrix for Triangle ABC:\n";
 }
