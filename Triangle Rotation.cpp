@@ -13,10 +13,10 @@ class triangle{
 		int x2,y2;
 		double matrix[3][3];
 		double Rmatrix[3][3];
-		double 	finalmatrix[3][3]={	{0,0,0},
-									{0,0,0},
-									{0,0,0},
-								};
+		double finalmatrix[3][3]={	{0,0,0},
+									                {0,0,0},
+									                {0,0,0},
+								                };
 		double theta;
 		
 	void createMatrix();
