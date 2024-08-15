@@ -19,4 +19,6 @@ cout << "\nMatrix for Triangle ABC:\n";
  t.createMatrix();
     t.displayMatrix(t.matrix);
     t.drawTriangle(t.matrix);
+t.createRMatrix();  
+    t.mulMatrix();
 }
