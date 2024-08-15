@@ -10,4 +10,5 @@ int gd = DETECT, gm;
     initgraph(&gd, &gm, (char*)"");
 cout << "Enter Triangle ABC Coordinates.....";
    cout << "\nEnter A: ";
+cin >> t.x0 >> t.y0;
 }
