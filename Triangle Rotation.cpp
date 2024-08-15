@@ -5,6 +5,27 @@
 
 using namespace std;
 
+
+
+
+
+void triangle::mulMatrix(){
+	cout<<"\n";
+	for(int i=0;i<row;++i)
+	{
+		for(int j=0;j<col;++j)
+		{
+			for(int k=0;k<col;++k)
+			{
+				finalmatrix[i][j]+=Rmatrix[i][k] * matrix[k][j];
+			}
+		}
+	}
+}
+
+
+
+
 int main(){
 int gd = DETECT, gm;
     initgraph(&gd, &gm, (char*)"");
