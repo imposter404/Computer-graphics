@@ -21,4 +21,7 @@ cout << "\nMatrix for Triangle ABC:\n";
     t.drawTriangle(t.matrix);
 t.createRMatrix();  
     t.mulMatrix();
+cout<<"Rotated Triangle cooedinates \n";
+    t.displayMatrix(t.finalmatrix);
+	t.drawTriangle(t.finalmatrix);
 }
