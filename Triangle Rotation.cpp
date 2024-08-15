@@ -5,6 +5,11 @@
 
 using namespace std;
 
+void triangle::drawTriangle(double mat[3][3]){
+	line(mat[0][0], mat[1][0], mat[0][1], mat[1][1]);
+    line(mat[0][0], mat[1][0], mat[0][2], mat[1][2]);
+    line(mat[0][1], mat[1][1],  mat[0][2], mat[1][2]);
+}
 
 
 
