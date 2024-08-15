@@ -5,6 +5,30 @@
 
 using namespace std;
 
+class triangle{
+	public:
+		int row;
+		int col;
+		int x0,y0;
+		int x1,y1;
+		int x2,y2;
+		double matrix[3][3];
+		double Rmatrix[3][3];
+		double 	finalmatrix[3][3]={	{0,0,0},
+									{0,0,0},
+									{0,0,0},
+								};
+		double theta;
+		
+	void createMatrix();
+	void createRMatrix();
+	void mulMatrix();
+	void drawTriangle(double mat[3][3]);
+	void displayMatrix(double mat[3][3]);
+};
+
+
+
 void triangle::createMatrix()
 {
     matrix[0][0] = x0;
