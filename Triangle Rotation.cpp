@@ -13,4 +13,6 @@ cout << "Enter Triangle ABC Coordinates.....";
 cin >> t.x0 >> t.y0;
 cout << "\nEnter B: ";
    cin >> t.x1 >> t.y1;
+cout << "\nEnter C: ";
+   cin >> t.x2 >> t.y2;
 }
