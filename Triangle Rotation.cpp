@@ -4,7 +4,6 @@
 #include <graphics.h>
 
 using namespace std;
-
 class triangle{
 	public:
 		int row;
@@ -26,7 +25,6 @@ class triangle{
 	void drawTriangle(double mat[3][3]);
 	void displayMatrix(double mat[3][3]);
 };
-
 
 
 void triangle::createMatrix()
@@ -56,12 +54,23 @@ void triangle::createRMatrix()
 }
 
 
+
+
 void triangle::drawTriangle(double mat[3][3]){
 	line(mat[0][0], mat[1][0], mat[0][1], mat[1][1]);
     line(mat[0][0], mat[1][0], mat[0][2], mat[1][2]);
     line(mat[0][1], mat[1][1],  mat[0][2], mat[1][2]);
 }
 
+void triangle::displayMatrix(double mat[3][3]){
+	for (int i = 0; i < row; ++i) {
+		for (int j = 0; j < col; ++j)
+        {	
+            cout << mat[i][j] << "   ";
+		}
+    	cout<< endl;
+    }
+}
 
 
 
@@ -82,26 +91,54 @@ void triangle::mulMatrix(){
 
 
 
-int main(){
-int gd = DETECT, gm;
+
+int main() {
+    int gd = DETECT, gm;
     initgraph(&gd, &gm, (char*)"");
-cout << "Enter Triangle ABC Coordinates.....";
+
+
+    triangle t;
+    t.row=3;
+    t.col=3;
+
+   cout << "Enter Triangle ABC Coordinates.....";
    cout << "\nEnter A: ";
-cin >> t.x0 >> t.y0;
-cout << "\nEnter B: ";
+   cin >> t.x0 >> t.y0;
+   cout << "\nEnter B: ";
    cin >> t.x1 >> t.y1;
-cout << "\nEnter C: ";
+   cout << "\nEnter C: ";
    cin >> t.x2 >> t.y2;
-cout << "\nMatrix for Triangle ABC:\n";
- t.createMatrix();
+
+// t.x0=100;
+// t.y0=200;
+// t.x1=300;
+// t.y1=100;
+// t.x2=200;
+// t.y2=300;
+
+    cout << "\nMatrix for Triangle ABC:\n";
+    t.createMatrix();
     t.displayMatrix(t.matrix);
     t.drawTriangle(t.matrix);
-t.createRMatrix();  
+    
+    cout << "\nEnter degree of rotation: ";
+    cin >> t.theta;
+    t.theta=t.theta * 0.01745;
+    
+//    cout<<cos(t.theta);
+    t.createRMatrix();
+    
     t.mulMatrix();
-cout<<"Rotated Triangle cooedinates \n";
+    cout<<"Rotated Triangle cooedinates \n";
     t.displayMatrix(t.finalmatrix);
 	t.drawTriangle(t.finalmatrix);
-getch();
+
+    getch();
     closegraph();
     return 0;
 }
+
+
+//tested 
+// working ....
+// :)
