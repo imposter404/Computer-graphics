@@ -24,4 +24,7 @@ t.createRMatrix();
 cout<<"Rotated Triangle cooedinates \n";
     t.displayMatrix(t.finalmatrix);
 	t.drawTriangle(t.finalmatrix);
+getch();
+    closegraph();
+    return 0;
 }
