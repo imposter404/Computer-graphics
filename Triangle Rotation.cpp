@@ -5,6 +5,20 @@
 
 using namespace std;
 
+void triangle::createRMatrix()
+{
+    Rmatrix[0][0] = cos(theta);
+    Rmatrix[1][0] = sin(theta);
+    Rmatrix[0][1] = -sin(theta);
+    Rmatrix[1][1] = cos(theta);
+    Rmatrix[0][2] = 0;
+    Rmatrix[1][2] = 0;
+    Rmatrix[2][0] = 0;
+    Rmatrix[2][1] = 0;
+    Rmatrix[2][2] = 1;
+}
+
+
 void triangle::drawTriangle(double mat[3][3]){
 	line(mat[0][0], mat[1][0], mat[0][1], mat[1][1]);
     line(mat[0][0], mat[1][0], mat[0][2], mat[1][2]);
