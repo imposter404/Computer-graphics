@@ -3,5 +3,5 @@
 //#include <cmath>
 #include <graphics.h>
 
-
+using namespace std;
 
