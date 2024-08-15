@@ -11,4 +11,6 @@ int gd = DETECT, gm;
 cout << "Enter Triangle ABC Coordinates.....";
    cout << "\nEnter A: ";
 cin >> t.x0 >> t.y0;
+cout << "\nEnter B: ";
+   cin >> t.x1 >> t.y1;
 }
