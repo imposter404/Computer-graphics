@@ -13,10 +13,10 @@ class triangle{
 		int x2,y2;
 		double matrix[3][3];
 		double Rmatrix[3][3];
-		double 	finalmatrix[3][3]={	{0,0,0},
-									{0,0,0},
-									{0,0,0},
-								};
+		double 	finalmatrix[3][3]={{0,0,0},
+					   {0,0,0},
+					   {0,0,0},
+				          };
 		double theta;
 		
 	void createMatrix();
@@ -57,7 +57,7 @@ void triangle::createRMatrix()
 
 
 void triangle::drawTriangle(double mat[3][3]){
-	line(mat[0][0], mat[1][0], mat[0][1], mat[1][1]);
+    line(mat[0][0], mat[1][0], mat[0][1], mat[1][1]);
     line(mat[0][0], mat[1][0], mat[0][2], mat[1][2]);
     line(mat[0][1], mat[1][1],  mat[0][2], mat[1][2]);
 }
@@ -65,11 +65,11 @@ void triangle::drawTriangle(double mat[3][3]){
 void triangle::displayMatrix(double mat[3][3]){
 	for (int i = 0; i < row; ++i) {
 		for (int j = 0; j < col; ++j)
-        {	
-            cout << mat[i][j] << "   ";
-		}
-    	cout<< endl;
-    }
+                    {	
+                        cout << mat[i][j] << "   ";
+		    }
+    	     cout<< endl;
+        }
 }
 
 
@@ -131,7 +131,7 @@ int main() {
     t.mulMatrix();
     cout<<"Rotated Triangle cooedinates \n";
     t.displayMatrix(t.finalmatrix);
-	t.drawTriangle(t.finalmatrix);
+    t.drawTriangle(t.finalmatrix);
 
     getch();
     closegraph();
