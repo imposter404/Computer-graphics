@@ -16,4 +16,7 @@ cout << "\nEnter B: ";
 cout << "\nEnter C: ";
    cin >> t.x2 >> t.y2;
 cout << "\nMatrix for Triangle ABC:\n";
+ t.createMatrix();
+    t.displayMatrix(t.matrix);
+    t.drawTriangle(t.matrix);
 }
