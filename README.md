@@ -8,8 +8,9 @@
 </div>
 
 
-
+> ``` c++
 > #include<iostream.h>
+> ```
 
 - program to implement the Digital Differential Analyzer (DDA) algorithm for drawing lines.
 - program to implement the Midpoint Line Drawing algorithm for drawing lines.
