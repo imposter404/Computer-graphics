@@ -3,6 +3,12 @@
 ### implimenting Computer Graphics programs using 
 # C++
 
+<div align="left">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" height="50px" alt="C++" />
+</div>
+
+
+
 > #include<iostream.h>
 
 - program to implement the Digital Differential Analyzer (DDA) algorithm for drawing lines.
