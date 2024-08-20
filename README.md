@@ -1,6 +1,6 @@
 # Computer Graphics
+implimenting Computer Graphics programs using 
 
-### implimenting Computer Graphics programs using 
 # C++
 
 <div align="left">
